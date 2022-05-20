@@ -1,0 +1,54 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 720px;
+    padding: 10px;
+    width: 90%;
+    border-bottom: 1px solid aliceblue;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 45px;
+    aspect-ratio: 1;
+    margin-right: 5px;
+}
+
+li {
+    list-style: none;
+    font-size: 16px;
+    color: #434343;
+}
+
+
+@media screen and (max-width: 720px){
+    .nav {
+        width: 80%;
+    }
+    img {
+        width: 30px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .nav {
+        width: 90%;
+
+    }
+    img {
+        width: 25px;
+        margin-right: 2px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    li {
+        font-size: 14px;
+    }
+}

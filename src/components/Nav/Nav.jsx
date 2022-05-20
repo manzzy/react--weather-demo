@@ -1,0 +1,23 @@
+import React from 'react'
+import { Link } from 'react-router-dom';
+import './nav.css';
+
+const Nav = () => {
+  return (
+    <div className="nav">
+        <div className="left">
+            <img src="data:image/png;base64,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" alt="" className="logo" />
+            <Link to="/">
+             <h4 className="name">React Weather App</h4>
+             </Link>
+        </div>
+
+        <ul className="right">
+            {/* <li className="about">About</li> */}
+            <Link to="/about">About</Link>
+        </ul>
+    </div>
+  )
+}
+
+export default Nav
